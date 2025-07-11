@@ -1,4 +1,6 @@
 # Currency Converter 💱
+<img width="1647" height="813" alt="image" src="https://github.com/user-attachments/assets/51717e53-8bb8-45f4-b2b9-f509b7bc7292" />
+
 
 A simple currency converter built using HTML, CSS, and JavaScript.  
 Includes real-time exchange rates and a beautiful UI.
