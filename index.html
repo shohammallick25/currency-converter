@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+    <link rel="icon" href="./r.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="circle circle--purple"></div>
+    <div class="circle circle--blue"></div>
+
+    <main class="currency-converter">
+        <!-- Title of the application -->
+        <h1 class="currency-converter__title">Currency Converter</h1>
+
+        <input class="currency-converter__input" id="inputSourceCurrency" type="number" placeholder="0">
+
+        <!-- Wrapper for currency input fields -->
+        <div class="currency-converter__select-group">
+
+            <!-- Source currency input section -->
+            <div class="currency-converter__select">
+                <img id="imageSourceCurrency" src="https://flagcdn.com/w640/us.png" alt="US Flag">
+                <select id="selectSourceCurrency" name="currency">
+
+                </select>
+            </div>
+
+            <!-- Separator with swap button -->
+            <button id="buttonSwap" class="currency-converter__swap-button">
+                <i class='bx bx-swap-vertical'></i>
+            </button>
+
+            <!-- Target currency input section -->
+            <div class="currency-converter__select">
+                <img id="imageTargetCurrency" src="https://flagcdn.com/w640/bd.png" alt="bd Flag">
+                <select id="selectTargetCurrency" name="currency">
+
+                </select>
+            </div>
+
+        </div>
+
+        <!-- Exchange rate information -->
+        <div class="currency-converter__exchange-rate">
+            <span id="exchangeRateText" class="currency-converter__exchange-rate-text">0 USD = 0 BDT</span>
+        </div>
+
+        <!-- Button to perform conversion -->
+        <button id="buttonConvert" class="currency-converter__convert-button">
+            Convert
+        </button>
+    </main>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
